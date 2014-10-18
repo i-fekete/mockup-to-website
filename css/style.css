@@ -13,6 +13,13 @@
   height: 1px;
 }
 
+.img-study {
+  position: relative;
+  margin: auto;
+  height: 200px;
+  max-width: none;
+}
+
 /*NOTES
 - center images in main
 - set height for images in main (min? max?)
