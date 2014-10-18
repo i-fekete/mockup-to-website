@@ -8,6 +8,12 @@
 }
 
 .ver-separator {
-  background-color: silver;
+  background: linear-gradient(to right, rgba(192,192,192,1), rgba(192,192,192,0)); /*css3 fading line*/
+  /*background-color: silver;*/
   height: 1px;
 }
+
+/*NOTES
+- center images in main
+- set height for images in main (min? max?)
+*/
