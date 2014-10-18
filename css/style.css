@@ -1,4 +1,5 @@
-* { /*this is to highlight boxes*/
+* { 
+  /*this is to highlight boxes*/
   outline: 1px solid red !important;
 }
 
@@ -6,13 +7,7 @@
   margin-top:20px;
 }
 
-.separator {
+.ver-separator {
   background-color: silver;
   height: 1px;
-}
-
-.work-img {
-  max-height: 150px;
-  margin-left: auto;
-  margin-right: auto;
 }
