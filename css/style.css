@@ -13,11 +13,25 @@
   height: 1px;
 }
 
+.fig-study {
+  overflow: hidden;
+}
+
 .img-study {
   position: relative;
   margin: auto;
-  height: 200px;
-  max-width: none;
+  display: inline-block;
+  border: 1px solid #dddddd;
+}
+
+.cap-study {
+  position: absolute;
+  bottom: 10%;
+  max-width: 75%;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 /*NOTES
