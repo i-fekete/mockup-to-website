@@ -6,116 +6,94 @@
   
   <meta charset='utf-8'>
   
-  <link rel="stylesheet" type="text/css" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div class="container">
+  <div class="grid">
 
     <!-- Header -->
 
     <header class="row">
       
-      <div class="col-md-4">
-        <img class="img-circle mylogo" src="img/self.png" alt="Logo with myself" title="Sure, that's me">
+      <div class="col-4">
+        <img class="mylogo" src="img/self.png" alt="Logo with my face">
       </div>
       
-      <div class="col-md-8 text-right">
-        <h1 class="text-uppercase">István Fekete</h1>
+      <div class="col-8">
+        <h1>István Fekete</h1>
         <h3>Front-end developer</h3>
       </div>
 
-    </header>
-
-    <div class="row">
       <hr class="ver-separator">
-    </div>
-
-    <!-- Left side of main -->
+       
+    </header>
 
     <main class="row">
       
-      <aside class="col-md-3">
-        <div class="row">
-          <article class="col-md-12">
-            <h2>Who...?</h2>
-            <p>I shall take some time and write a few lines about myself</p>
-          </article>
-          <hr class="ver-separator">
-          <!-- NOTE: I shall investigate why this hr works as intended (is hidden with full screen layout) -->
-        </div>
+      <!-- Left side of main -->
+      <aside class="col-3">
+        <h2>Who...?</h2>
+        <p>I shall take some time and write a few lines about myself</p>
       </aside>
       
       <!-- Right side of main -->
-
-      <div class="col-md-9 aside-separator">
+      <section class="col-9 row aside-separator">
 
         <!-- Projects -->
-        
         <div class="row">
-          <div class="col-md-12">
+          
+          <div class="col-12">
             <h2>Projects</h2>
           </div>
-        </div>
-
-        <div class="row text-center">
-          
-          <figure class="col-md-6">
-            <img class="img-responsive" src="http://placepuppy.it/200/200">
+                  
+          <figure class="col-6">
+            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
             <figcaption>
               <h4>Some stuff about the picture.</h4>
               <h6>Some detailed and boring stuff</h6>
             </figcaption>
           </figure>
 
-          <figure class="col-md-6">
-            <img class="img-responsive" src="http://placepuppy.it/200/200">
+          <figure class="col-6">
+            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
             <figcaption>
               <h4>Some really really long stuff about the picture to see how this aligns.</h4>
               <h6>Some detailed and boring stuff</h6>
             </figcaption>
           </figure>
 
-        </div>
-
-        <div class="row text-center">
-          
-          <figure class="col-md-6">
-            <img class="img-responsive" src="http://placepuppy.it/200/200">
+          <figure class="col-6">
+            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
             <figcaption>
               <h4>Some stuff about the picture.</h4>
               <h6>Some detailed and boring stuff</h6>
             </figcaption>
           </figure>
 
-          <figure class="col-md-6">
-            <img class="img-responsive" src="http://placepuppy.it/200/200">
+          <figure class="col-6">
+            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
             <figcaption>
-              <h4>Some really really long stuff about the picture to see how this aligns.</h4>
+              <h4>Some really really...</h4>
               <h6>Some detailed and boring stuff</h6>
             </figcaption>
           </figure>
 
-        </div>
-
-        <div class="row">
           <hr class="ver-separator-short">
+
         </div>
 
         <!-- Studies -->
-        <!-- NOTE: optimal image aspect ratio 5:3, optimal size: 189*113px -->
-
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-12">
             <h2>Studies</h2>
           </div>
         </div>
 
         <div class="row">
           
-          <figure class="col-md-3 fig-study">
+          <figure class="col-3 fig-study">
             <a href="https://www.udacity.com/course/cs101">
               <img class="img-responsive img-study" src="img/school_uda_101.png" alt="Udacity image">
               <figcaption class="cap-study">
@@ -124,7 +102,7 @@
             </a>
           </figure>
 
-          <figure class="col-md-3 fig-study">
+          <figure class="col-3 fig-study">
             <a href="https://www.edx.org/course/mitx/mitx-6-00-1x-introduction-computer-2841">
               <img class="img-responsive img-study" src="img/school_mit_data.png" alt="edX image">
               <figcaption class="cap-study">
@@ -133,7 +111,7 @@
             </a>
           </figure>
 
-          <figure class="col-md-3 fig-study">
+          <figure class="col-3 fig-study">
             <a href="https://www.edx.org/node/2836">
               <img class="img-responsive img-study" src="img/school_mit_python.png" alt="edX image">
               <figcaption class="cap-study">
@@ -142,7 +120,7 @@
             </a>
           </figure>
 
-          <figure class="col-md-3 fig-study">
+          <figure class="col-3 fig-study">
             <a href="https://www.udacity.com/course/cs101">
               <img class="img-responsive img-study" src="img/school_uda_webdev.png" alt="Udacity image">
               <figcaption class="cap-study">
@@ -155,7 +133,7 @@
 
         <div class="row">
           
-          <figure class="col-md-3 fig-study">
+          <figure class="col-3 fig-study">
             <a href="https://www.coursera.org/course/interactivepython">
               <img class="img-responsive img-study" src="img/school_rice_python.png" alt="Coursera image">
               <figcaption class="cap-study">
@@ -164,18 +142,18 @@
             </a>
           </figure>
 
-          <figure class="col-md-3 fig-study">
+          <figure class="col-3 fig-study">
           </figure>
 
-          <figure class="col-md-3 fig-study">
+          <figure class="col-3 fig-study">
           </figure>
 
-          <figure class="col-md-3 fig-study">
+          <figure class="col-3 fig-study">
           </figure>
 
         </div>
 
-      </div>
+      </section>
     
     </main>
 
@@ -186,7 +164,7 @@
     </div>
 
     <footer class="row">
-      <div class="col-md-12">
+      <div class="col-12">
       </div>
     </footer> -->
 
