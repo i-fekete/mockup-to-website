@@ -1,6 +1,6 @@
-/** { 
+* { 
   outline: 1px solid red !important;
-}*/
+}
 
 * {
   -webkit-box-sizing: border-box;
@@ -10,6 +10,10 @@
   /*The width and height properties (and min/max properties) includes 
   content, padding and border, but not the margin*/
 }
+
+
+
+/*General structure*/
 
 .grid {
   margin: 0 auto;
@@ -61,9 +65,9 @@
   width:100%
 }
 
-.mylogo {
-  border-radius: 50%;
-}
+
+
+/*Misc small parts*/
 
 main {
   align-items: baseline;
@@ -71,8 +75,36 @@ main {
 
 .img-responsive {
   max-width: 100%;
+  height: auto;
 }
 
+.projects, .studies {
+  padding-left: 20px;
+}
+
+aside {
+  padding-right: 20px;
+}
+
+
+
+/*Header*/
+
+header {
+  text-align: right;
+  text-transform: uppercase;
+  /*min-width: 400px;*/
+}
+
+header h1 {
+  margin-top: 0;
+}
+
+.mylogo {
+  display: block;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
 
 
 /*Projects - larger images with description below*/
@@ -82,6 +114,9 @@ main {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  padding: 0 15px;
+  min-width: 325px;
+  flex: 1 1 auto;
 }
 
 .projects figcaption {
@@ -89,31 +124,14 @@ main {
   text-align: center;
 }
 
-
-
-/*Separators*/
-
-.ver-separator {
-  background: linear-gradient(to right, rgba(192,192,192,0), rgba(192,192,192,1), rgba(192,192,192,0)); /*css3 fading line*/
-  height: 2px;
-  width: 100%;
-  border: 0;
+.projects figcaption h4 {
+  margin-bottom: 0;
 }
 
-.ver-separator-short {
-  background: linear-gradient(to right, rgba(192,192,192,0), rgba(192,192,192,1), rgba(192,192,192,0));
-  width: 75%;
-  height: 2px;
-  border: 0;
+.projects figcaption h5 {
+  margin-top: 1em;
+  font-weight: normal;
 }
-
-.aside-separator {
-  border-left-width: 2px;
-  border-right-width: 0;
-  border-style: solid;
-  border-image: linear-gradient(to bottom, rgba(192,192,192,0), rgba(192,192,192,1), rgba(192,192,192,0)) 1 100%;
-}
-
 
 
 /*Studies - smaller images with text above the image*/
@@ -147,11 +165,35 @@ main {
   max-height: 80%;
   background: rgba(0,0,0,0.8);
   color: white;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 0 5px;
 }
 
 .studies h6 {
-  margin: 5px;
+  margin: 5px 0;
   text-align: left;
+}
+
+
+
+/*Separators*/
+
+.ver-separator {
+  background: linear-gradient(to right, rgba(192,192,192,0), rgba(192,192,192,1), rgba(192,192,192,0)); /*css3 fading line*/
+  height: 2px;
+  width: 100%;
+  border: 0;
+}
+
+.ver-separator-short {
+  background: linear-gradient(to right, rgba(192,192,192,0), rgba(192,192,192,1), rgba(192,192,192,0));
+  width: 75%;
+  height: 2px;
+  border: 0;
+}
+
+.aside-separator {
+  border-left-width: 2px;
+  border-right-width: 0;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, rgba(192,192,192,0), rgba(192,192,192,1), rgba(192,192,192,0)) 1 100%;
 }
