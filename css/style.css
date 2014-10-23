@@ -71,6 +71,7 @@
 
 main {
   align-items: baseline;
+  justify-content: center;
 }
 
 .img-responsive {
@@ -84,6 +85,8 @@ main {
 
 aside {
   padding-right: 20px;
+  min-width: 220px;
+  flex: 1 1 auto;
 }
 
 
@@ -137,7 +140,7 @@ header h1 {
 /*Studies - smaller images with text above the image*/
 
 .studies {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .studies figure {
