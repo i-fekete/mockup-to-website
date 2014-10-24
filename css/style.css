@@ -24,7 +24,9 @@
 
 .row {
   width: 100%;
+  -webkit-display: flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -70,7 +72,9 @@
 /*Misc small parts*/
 
 main {
+  -webkit-align-items: baseline;
   align-items: baseline;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
@@ -86,6 +90,7 @@ main {
 aside {
   padding-right: 20px;
   min-width: 220px;
+  -webkit-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
@@ -123,11 +128,15 @@ header h1 {
 
 .projects figure {
   margin: 0;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-flow: column wrap;
   flex-flow: column wrap;
+  -webkit-align-items: center;
   align-items: center;
   padding: 0 15px;
   min-width: 300px;
+  -webkit-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
@@ -160,6 +169,7 @@ header h1 {
 /*Studies - smaller images with text above the image*/
 
 .studies {
+  -webkit-justify-content: space-around;
   justify-content: space-around;
 }
 
@@ -171,6 +181,7 @@ header h1 {
   min-width: 180px;
   max-width: 209px; /*picture width is 189px + padding * 2*/
   padding: 10px;
+  -webkit-flex: 1 1 auto;
   flex: 1 1 auto;
   text-align: center;
 }
