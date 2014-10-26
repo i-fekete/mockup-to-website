@@ -208,7 +208,15 @@ header h1 {
   text-align: left;
 }
 
+.studies a:link, a:visited, a:active {
+  text-decoration: none;
+  color: white;
+}
 
+.studies a:hover {
+  text-decoration: underline;
+  color: white;
+}
 
 /*Separators*/
 
