@@ -81,7 +81,7 @@ main {
 .img-responsive {
   max-width: 100%;
   height: auto;
-  min-height: 2px;
+  min-height: 2px; /*to solve a known IE bug with nested flexboxes*/
 }
 
 .projects, .studies {
@@ -182,8 +182,8 @@ header h1 {
   min-width: 180px;
   max-width: 209px; /*picture width is 189px + padding * 2*/
   padding: 10px;
-  -webkit-flex: 1 1 auto;
-  flex: 1 1 auto;
+  -webkit-flex: 1 1 100%; /*using 100% instead of auto because of a bug in IE*/
+  flex: 1 1 100%;
   text-align: center;
 }
 
