@@ -81,6 +81,7 @@ main {
 .img-responsive {
   max-width: 100%;
   height: auto;
+  min-height: 2px;
 }
 
 .projects, .studies {
