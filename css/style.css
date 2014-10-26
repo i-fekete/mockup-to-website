@@ -128,9 +128,6 @@ header h1 {
 
 .projects figure {
   margin: 0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: column wrap;
@@ -228,6 +225,10 @@ header h1 {
   border: 0;
 }
 
+aside .hor-separator-short {
+  display: none;
+}
+
 .left-separator {
   border-left-width: 2px;
   border-right-width: 0;
@@ -238,5 +239,8 @@ header h1 {
 @media (max-width: 950px) {
   .left-separator {
     border-left-width: 0;
+  }
+  aside .hor-separator-short {
+    display: block;
   }
 }
